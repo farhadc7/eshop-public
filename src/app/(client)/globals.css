@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  button:hover:not(.slick-arrow) {
+    @apply scale-105 transition-transform;
+  }
+  .singleCardPost {
+    @apply bg-red-200 rounded min-h-[300px] text-center p-3;
+  }
+  .btnMore {
+    @apply w-1/5  rounded min-h-[40px] text-center border-2 border-green-700 border-solid border-opacity-70 mt-6 shadow-md bg-green-500 	
+    text-white block w-full transition;
+  }
+  .btnMore:hover {
+    @apply bg-green-900 shadow-xl scale-[1.01] transition;
+  }
+  .textField__input {
+    @apply block min-h-[auto] w-full rounded  border-0  px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0;
+  }
+  .textField__lable {
+    @apply pointer-events-none   mb-0 max-w-[90%] origin-[0_0]  motion-reduce:transition-none;
+  }
+  .borderDetail {
+    @apply border-b-[1px] border-opacity-10 border-gray-300;
+  }
+  .navigate_mobile{
+    @apply text-center flex justify-center items-center h-full
+  }
+  .nav_mobile .navigate_mobile:active{
+      @apply bg-bgHeader rounded-3xl 
+  }
+}
+
+button:disabled,
+button[disabled] {
+  cursor: not-allowed;
+  background-color: #cccccc;
+  color: #666666;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: darkorange;
+}
+.headerIntro .slick-prev:before,
+.headerIntro .slick-next:before {
+  color: rgb(255, 255, 255);
+}
