@@ -22,10 +22,10 @@ const ClientParent = ({ banner }) => {
         <CategorySlider />
       </div>
       <div className="grid grid-cols-8 gap-4 my-5 md:my-10  ">
-        {/* <div className="col-span-8 md:col-span-2 md:sticky top-0 left-0 self-start ">
+        <div className="col-span-8 md:col-span-2 md:sticky top-0 left-0 self-start ">
           <SideBar />
-        </div> */}
-        {/* <div className="col-span-8 md:col-span-6   ">
+        </div>
+        <div className="col-span-8 md:col-span-6   ">
           <div className="my-3">
             <h2 className="text-xl font-bold px-3 pb-3">Deals of the Day</h2>
             <ProductSlider count={4} />
@@ -47,7 +47,7 @@ const ClientParent = ({ banner }) => {
             <h2 className="text-xl font-bold px-3 pb-3">Deals of the Day</h2>
             <ProductSlider count={4} />
           </div>
-        </div> */}
+        </div>
       </div>
     </>
   );
